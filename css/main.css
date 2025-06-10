@@ -568,16 +568,34 @@ body{
 /* medium screen  */
 @media (max-width:992px) {
     #carouselExampleAutoplaying{
-    height: 500px;
+    height: 450px;
     }
+    #testimoinals .carousel-item p {
+    font-size: 11px;
+    margin: 10px 0;
+}
+#testimoinals .carousel-item h6 {
+    font-weight: 600;
+    font-size: 15px
+}
+#testimoinals .carousel-indicators button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 30px 0;
+    background-color: var(--color-primary1);
+}
 }
 /* small screen  */
 @media (max-width:768px) {
     #carouselExampleAutoplaying{
-    height: inherit;
+    height: 350px;
     }
 #testimoinals .carousel-indicators{
     display: none;
+    }
+    #testimoinals #carouselExampleAutoplaying .c2{
+        display: none;
     }
 }
 /* end testimoinals  */
