@@ -75,6 +75,26 @@ body{
 .navbar .user-option i:hover {
     color: var(--color-primary1);
 }
+.navbar .user-option button.dark-mood{
+    width: 60px;
+    text-align: start;
+    border: transparent;
+    background-color: #1e232b;
+    transition: all 1s;
+    font-size: 10px;
+}
+.navbar .user-option button.dark-mood i{
+    color: white;
+    padding:8px 5px;
+    transition: all 0.5s;
+}
+.navbar .user-option button.dark-mood:hover{
+    text-align: end;
+    background-color: white;
+}
+.navbar .user-option button.dark-mood:hover i{
+    color: #1e232b;
+}
 .navbar .user-option button{
     border-radius: 20px;
     margin: 0 10px;
@@ -82,7 +102,9 @@ body{
     transition: all 0.3s;
     background: var(--color-primary1);
     color: var(--color-white);
+    font-size: 14px;
 }
+
 .navbar .user-option button:hover{
     background: #bc850e;
 }
@@ -101,30 +123,43 @@ body{
     transform: rotate(360deg);
 }
 /* larg screen  */
-@media (max-width:992px) {
+@media (max-width:1240px){
     .navbar .links{
-        width: 370px;
-    }
+        width: 330px;
+}
     .navbar .links li a{
     font-size: 12px;
-    margin: 0 10px;
 }
     .navbar .user-option a{
     margin: 0 5px;
     font-size: 12px;
 }
 .navbar .user-option button{
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
 }
 .navbar .toggle button{
     border: none;
     background-color: transparent;
     display: none;
 }
+.navbar .user-option button.dark-mood{
+    width: 50px;
+}
+}
+/* larg screen  */
+@media (max-width:992px) {
+    .navbar .links li a{
+    font-size: 10px;
+    margin: 0 10px;
+}
+.navbar .user-option button.dark-mood{
+    width: 40px;
+}
 }
 /* medium screen  */
-@media (max-width:768px) {
+@media (max-width:767px) {
     .navbar .toggle button{
     display: block;
 }
