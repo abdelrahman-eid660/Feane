@@ -1,690 +1,953 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 🤖 روبوتات محركات البحث -->
-    <meta name="robots" content="index, follow">
-    <!-- 📄 وصف الصفحة لمحركات البحث -->
-    <meta name="description" content="استمتع بأشهى أنواع البرجر والبيتزا والوجبات السريعة في مطعمنا! نستخدم أفضل المكونات الطازجة ونقدم تجربة طعام فريدة من نوعها في جو عصري وخدمة مميزة. احجز طاولتك الآن أو اطلب أونلاين." />
-    <meta name="keywords" content="مطعم برجر, بيتزا, وجبات سريعة, مطعم عصري, برجر لحم, برجر دجاج, بيتزا إيطالي, وجبات جاهزة, مطعم توصيل, مطاعم مصر, مطعم اونلاين, مطاعم القاهرة, مطاعم الاسكندرية" />
-    <meta name="author" content="مطعم البرجر والبيتزا - بإدارة الأستاذ عبدالرحمن" />
-    <meta name="contact" content="info@burgerpizza-restaurant.com, +201144665225" />
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="مطعمنا - أفضل برجر وبيتزا ووجبات سريعة" />
-    <meta property="og:description" content="عيش تجربة طعام مميزة في مطعمنا! بنقدملك ألذ أنواع البرجر والبيتزا باستخدام مكونات طازجة وجودة عالية. اطلب أونلاين أو زورنا في أقرب فرع ليك!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourwebsite.com/" />
-    <meta property="og:image" content="https://yourwebsite.com/images/og-cover.jpg" />
-    <meta property="og:site_name" content="Burger & Pizza Restaurant" />
-    <meta property="og:locale" content="ar_EG" />   
-    <!-- font google  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
-    <!-- link Font Awesome  -->
-    <link rel="stylesheet" href="./css/all.min.css">
-    <!-- link bootstrap  -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- link css  -->
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- link favicon  -->
-    <link rel="shortcut icon" href="imgs/favicon.png" type="">
-    <title>Feane</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 🤖 روبوتات محركات البحث -->
+        <meta name="robots" content="index, follow">
+        <!-- 📄 وصف الصفحة لمحركات البحث -->
+        <meta name="description"
+            content="استمتع بأشهى أنواع البرجر والبيتزا والوجبات السريعة في مطعمنا! نستخدم أفضل المكونات الطازجة ونقدم تجربة طعام فريدة من نوعها في جو عصري وخدمة مميزة. احجز طاولتك الآن أو اطلب أونلاين." />
+        <meta name="keywords"
+            content="مطعم برجر, بيتزا, وجبات سريعة, مطعم عصري, برجر لحم, برجر دجاج, بيتزا إيطالي, وجبات جاهزة, مطعم توصيل, مطاعم مصر, مطعم اونلاين, مطاعم القاهرة, مطاعم الاسكندرية" />
+        <meta name="author"
+            content="مطعم البرجر والبيتزا - بإدارة الأستاذ عبدالرحمن" />
+        <meta name="contact"
+            content="info@burgerpizza-restaurant.com, +201144665225" />
+        <!-- Open Graph Meta Tags for Social Sharing -->
+        <meta property="og:title"
+            content="مطعمنا - أفضل برجر وبيتزا ووجبات سريعة" />
+        <meta property="og:description"
+            content="عيش تجربة طعام مميزة في مطعمنا! بنقدملك ألذ أنواع البرجر والبيتزا باستخدام مكونات طازجة وجودة عالية. اطلب أونلاين أو زورنا في أقرب فرع ليك!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourwebsite.com/" />
+        <meta property="og:image"
+            content="https://yourwebsite.com/images/og-cover.jpg" />
+        <meta property="og:site_name" content="Burger & Pizza Restaurant" />
+        <meta property="og:locale" content="ar_EG" />
+        <!-- font google  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+            rel="stylesheet">
+        <!-- link Font Awesome  -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <div class="hero">
-        <div class="background">
-            <img src="./imgs/hero-bg.jpg" class="img-fluid" alt="">
-        </div>
-        <header>
-        <nav class="navbar navbar-expand-md ">
-    <div class="container">
+        <!-- link bootstrap  -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- link css  -->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- link favicon  -->
+        <link rel="shortcut icon" href="imgs/favicon.png" type>
+        <title>Feane</title>
+    </head>
+    <body>
 
-        <div class="logo">
-                <a class="navbar-brand " href="#">Feane</a>
-        </div>
-
-        <div class="toggle">
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-    
-    <div class="links collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav align-items-center me-0 ">
-
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#book">Book Table</a>
-        </li>
-        </ul>
-    </div>
-
-    <div class="user-option collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="option me-0">
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <button class="dark-mood"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                <button class="btn">Order Online</button>
-        </div>
-                
-        
-        
-    </div>
-
-    </div>
-</nav>
-    </header>
-
-
-    <main id="hero">
-        <div class="container">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-
-    <div class="carousel-inner">
-    <div class="carousel-item active">
-    <h2>Fast Food Restaurant</h2>
-    <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
-    <button class="btn">Order Online</button>
-
-    </div>
-    <div class="carousel-item">
-<h2>Fast Food Restaurant</h2>
-<p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
-<button class="btn">Order Online</button>
-    </div>
-    <div class="carousel-item">
-<h2>Fast Food Restaurant</h2>
-<p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
-<button class="btn">Order Online</button>
-    </div>
-</div>
-    <div class="change">
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"> 
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+        <div class="hero">
+            <div class="background">
+                <img src="./imgs/hero-bg.jpg" class="img-fluid" alt>
             </div>
+            <header>
+                <nav class="navbar navbar-expand-md ">
+                    <div class="container">
+
+                        <div class="logo">
+                            <a class="navbar-brand " href="#">Feane</a>
+                        </div>
+
+                        <div class="toggle">
+                            <button type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div class="links collapse navbar-collapse "
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center me-0 ">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                        aria-current="page"
+                                        href="#home">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#menu">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#book">Book
+                                        Table</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="user-option collapse navbar-collapse"
+                            id="navbarSupportedContent">
+                            <div class="option me-0">
+                                <a href="#"><i class="fa-solid fa-user"></i></a>
+                                <a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <button class="dark-mood"><i
+                                        class="fa-solid fa-moon icon"></i></button>
+                                <button class="btn">Order Online</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </header>
+
+            <main id="hero">
+                <div class="container">
+                    <div id="carousel" class="carousel slide"
+                        data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h2>Fast Food Restaurant</h2>
+                                <p>Doloremque, itaque aperiam facilis rerum,
+                                    commodi, temporibus sapiente ad mollitia
+                                    laborum quam quisquam esse error unde.
+                                    Tempora ex doloremque, labore, sunt repellat
+                                    dolore, iste magni quos nihil ducimus libero
+                                    ipsam.</p>
+                                <button class="btn">Order Online</button>
+
+                            </div>
+                            <div class="carousel-item">
+                                <h2>Fast Food Restaurant</h2>
+                                <p>Doloremque, itaque aperiam facilis rerum,
+                                    commodi, temporibus sapiente ad mollitia
+                                    laborum quam quisquam esse error unde.
+                                    Tempora ex doloremque, labore, sunt repellat
+                                    dolore, iste magni quos nihil ducimus libero
+                                    ipsam.</p>
+                                <button class="btn">Order Online</button>
+                            </div>
+                            <div class="carousel-item">
+                                <h2>Fast Food Restaurant</h2>
+                                <p>Doloremque, itaque aperiam facilis rerum,
+                                    commodi, temporibus sapiente ad mollitia
+                                    laborum quam quisquam esse error unde.
+                                    Tempora ex doloremque, labore, sunt repellat
+                                    dolore, iste magni quos nihil ducimus libero
+                                    ipsam.</p>
+                                <button class="btn">Order Online</button>
+                            </div>
+                        </div>
+                        <div class="change">
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carousel" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carousel" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="carousel-indicators">
+                            <button type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="0" class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"></button>
+                            <button type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
         </div>
 
-    </main>
-    </div>
+        <section id="offer">
+            <div class="container">
+                <div class="row row-offer">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="meal ">
+                            <div class="picture">
+                                <img src="./imgs/o1.jpg" class="img-fluid" alt>
+                            </div>
+                            <div class="info">
+                                <h5>Tasty Thursdays</h5>
+                                <h6><span>20%</span> off</h6>
+                                <button class="btn"><a href="#">Order Now<i
+                                            class="fa-solid fa-cart-shopping"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="meal">
+                            <div class="picture">
+                                <img src="./imgs/o2.jpg" class="img-fluid" alt>
+                            </div>
+                            <div class="info">
+                                <h5>Pizza Days</h5>
+                                <h6><span>15%</span> off</h6>
+                                <button class="btn"><a href="#">Order Now<i
+                                            class="fa-solid fa-cart-shopping"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="offer">
-        <div class="container">
-            <div class="row row-offer">
-                <div class="col-lg-6 col-md-6">
-                    <div class="meal ">
+        <section id="menu">
+            <div class="container">
+                <div class="row row-menu">
+
+                    <div class="title">
+                        <h2>Our Menu</h2>
+                    </div>
+
+                    <div class="items">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="All-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#All-tab-pane" type="button"
+                                    role="tab" aria-controls="All-tab-pane"
+                                    aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="Burger-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#Burger-tab-pane"
+                                    type="button" role="tab"
+                                    aria-controls="Burger-tab-pane"
+                                    aria-selected="false">Burger</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="Pizza-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#Pizza-tab-pane"
+                                    type="button" role="tab"
+                                    aria-controls="Pizza-tab-pane"
+                                    aria-selected="false">Pizza</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="Pasta-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#Pasta-tab-pane"
+                                    type="button" role="tab"
+                                    aria-controls="Pasta-tab-pane"
+                                    aria-selected="false">Pasta</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="Fries-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#Fries-tab-pane"
+                                    type="button" role="tab"
+                                    aria-controls="Fries-tab-pane"
+                                    aria-selected="false">Fries</button>
+                            </li>
+                        </ul>
+                        <div class="contant">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active"
+                                    id="All-tab-pane" role="tabpanel"
+                                    aria-labelledby="All-tab" tabindex="0">
+                                    <div
+                                        class="row row-all justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f1.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pizza</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$20</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f2.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Burger</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$15</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f3.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pizza</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$17</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f4.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pasta</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$18</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f5.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>French Fries</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$10</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f6.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pizza</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$15</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f7.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Hot Burger</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$12</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f8.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>king Burger</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$14</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f9.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pasta</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$10</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Burger-tab-pane"
+                                    role="tabpanel" aria-labelledby="Burger-tab"
+                                    tabindex="0">
+                                    <div
+                                        class="row row-Burger justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f2.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Burger</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$15</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f7.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Hot Burger</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$12</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f8.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>king Burger</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$14</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Pizza-tab-pane"
+                                    role="tabpanel" aria-labelledby="Pizza-tab"
+                                    tabindex="0">
+                                    <div
+                                        class="row row-Pizaa justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f1.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pizza</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$20</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f3.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pizza</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$17</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f6.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pizza</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$15</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Pasta-tab-pane"
+                                    role="tabpanel" aria-labelledby="Pasta-tab"
+                                    tabindex="0">
+                                    <div
+                                        class="row row-Pasta justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f4.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pasta</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$18</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f9.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>Delicious Pasta</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$10</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Fries-tab-pane"
+                                    role="tabpanel" aria-labelledby="Fries-tab"
+                                    tabindex="0">
+                                    <div
+                                        class="row row-Fries justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="meal">
+                                                <div class="picture">
+                                                    <img src="./imgs/f5.png"
+                                                        alt>
+                                                </div>
+                                                <div class="info">
+                                                    <h6>French Fries</h6>
+                                                    <p>Veniam debitis quaerat
+                                                        officiis quasi
+                                                        cupiditate quo, quisquam
+                                                        velit, magnam voluptatem
+                                                        repellendus sed
+                                                        eaque</p>
+                                                    <div class="buy">
+                                                        <span>$10</span>
+                                                        <i
+                                                            class="fa-solid fa-cart-shopping"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="container">
+                <div class="row row-about align-items-center">
+                    <div class="col-md-6">
                         <div class="picture">
-                            <img src="./imgs/o1.jpg" class="img-fluid" alt="">
+                            <img src="./imgs/about-img.png" class="img-fluid"
+                                alt>
                         </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="info">
-                            <h5>Tasty Thursdays</h5>
-                            <h6><span>20%</span> off</h6>
-                            <button class="btn"><a href="#">Order Now<i class="fa-solid fa-cart-shopping"></i></a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="meal">
-                        <div class="picture">
-                            <img src="./imgs/o2.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="info">
-                            <h5>Pizza Days</h5>
-                            <h6><span>15%</span> off</h6>
-                            <button class="btn"><a href="#">Order Now<i class="fa-solid fa-cart-shopping"></i></a></button>
+                            <h3>We Are Feane</h3>
+                            <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, or
+                                randomised words which don't look even slightly
+                                believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of
+                                text. All</p>
+                            <button class="btn">Read More</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="menu">
-        <div class="container">
-            <div class="row row-menu">
-
-                <div class="title">
-                    <h2>Our Menu</h2>
-                </div>
-
-                <div class="items">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All-tab-pane" type="button" role="tab" aria-controls="All-tab-pane" aria-selected="true">All</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Burger-tab" data-bs-toggle="tab" data-bs-target="#Burger-tab-pane" type="button" role="tab" aria-controls="Burger-tab-pane" aria-selected="false">Burger</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Pizza-tab" data-bs-toggle="tab" data-bs-target="#Pizza-tab-pane" type="button" role="tab" aria-controls="Pizza-tab-pane" aria-selected="false">Pizza</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Pasta-tab" data-bs-toggle="tab" data-bs-target="#Pasta-tab-pane" type="button" role="tab" aria-controls="Pasta-tab-pane" aria-selected="false">Pasta</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Fries-tab" data-bs-toggle="tab" data-bs-target="#Fries-tab-pane" type="button" role="tab" aria-controls="Fries-tab-pane" aria-selected="false" >Fries</button>
-                    </li>
-                    </ul>
-        <div class="contant">
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="All-tab-pane" role="tabpanel" aria-labelledby="All-tab" tabindex="0">
-                    <div class="row row-all justify-content-center align-items-center">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pizza</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$20</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f2.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Burger</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$15</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f3.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pizza</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$17</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f4.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pasta</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$18</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f5.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>French Fries</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$10</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f6.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pizza</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$15</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f7.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Hot Burger</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$12</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f8.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>king Burger</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$14</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f9.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pasta</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$10</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
+        <section id="book">
+            <div class="container">
+                <div class="row row-box">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="detils">
+                            <h2>Book A Table</h2>
+                            <form action="table">
+                                <input type="text" name="user" id="user"
+                                    placeholder="Your Name">
+                                <input type="text" name="num" id="num"
+                                    placeholder="Your Phone">
+                                <input type="email" name="email" id="email"
+                                    placeholder="Your Emali">
+                                <select name id>
+                                    <option value="How many person" selected
+                                        disabled>How many person</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <input type="date" name="date" id="date">
+                                <button class="btn ">Book Now</button>
+                            </form>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="Burger-tab-pane" role="tabpanel" aria-labelledby="Burger-tab" tabindex="0">
-                    <div class="row row-Burger justify-content-center align-items-center">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f2.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Burger</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$15</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f7.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Hot Burger</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$12</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f8.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>king Burger</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$14</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="Pizza-tab-pane" role="tabpanel" aria-labelledby="Pizza-tab" tabindex="0">
-                    <div class="row row-Pizaa justify-content-center align-items-center">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pizza</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$20</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f3.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pizza</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$17</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f6.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pizza</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$15</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="Pasta-tab-pane" role="tabpanel" aria-labelledby="Pasta-tab" tabindex="0">
-                    <div class="row row-Pasta justify-content-center align-items-center">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f4.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pasta</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$18</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f9.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Delicious Pasta</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$10</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                </div>
-                </div>
-                <div class="tab-pane fade" id="Fries-tab-pane" role="tabpanel" aria-labelledby="Fries-tab" tabindex="0">
-                    <div class="row row-Fries justify-content-center align-items-center">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="meal">
-                                <div class="picture">
-                                    <img src="./imgs/f5.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>French Fries</h6>
-                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-                                    <div class="buy">
-                                        <span>$10</span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <div class="col-lg-6 col-md-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110412.26760715172!2d31.404011334029754!3d30.1404537796744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815538fd1342b%3A0xf0501f0302f12c54!2sBurger%20King%20-%20Merry%20Land%20Heliopolis!5e0!3m2!1sar!2seg!4v1749397981275!5m2!1sar!2seg"
+                            class="map" allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
-        </div>
-            
-                    </div>
-                </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="testimoinals">
+            <div class="container">
+                <div class="row row-testimoinals">
 
-    <section id="about-us">
-        <div class="container">
-            <div class="row row-about align-items-center">
-                <div class="col-md-6">
-                    <div class="picture">
-                        <img src="./imgs/about-img.png" class="img-fluid" alt="">
+                    <div class="title">
+                        <h2>What Says Our Customers</h2>
                     </div>
-                </div>
-                <div class="col-md-6">
-                <div class="info">
-                    <h3>We Are Feane</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
-                    <button class="btn">Read More</button>
-                </div>
+
+                    <div id="carouselExampleAutoplaying" class="carousel slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+
+                            <div class="carousel-item active  ">
+                                <div
+                                    class="row row-item justify-content-center ">
+                                    <div class="col-md-6 position-relative">
+                                        <div class="customer ">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam</p>
+                                            <h6>Moana Michell</h6>
+                                            <p>magna aliqua</p>
+                                        </div>
+                                        <div class="picture  ">
+                                            <img src="./imgs/client1.jpg"
+                                                class="img-fluid" alt>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 position-relative c2">
+                                        <div class="customer">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam</p>
+                                            <h6>Mike Hamell</h6>
+                                            <p>magna aliqua</p>
+                                        </div>
+                                        <div class="picture  ">
+                                            <img src="./imgs/client2.jpg"
+                                                class="img-fluid" alt>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item  ">
+                                <div
+                                    class="row row-item justify-content-center ">
+
+                                    <div class="col-md-6 c2">
+                                        <div class="customer  ">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam</p>
+                                            <h6>Moana Michell</h6>
+                                            <p>magna aliqua</p>
+                                        </div>
+                                        <div class="picture  ">
+                                            <img src="./imgs/client1.jpg"
+                                                class="img-fluid" alt>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="customer  ">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam</p>
+                                            <h6>Mike Hamell</h6>
+                                            <p>magna aliqua</p>
+                                        </div>
+                                        <div class="picture  ">
+                                            <img src="./imgs/client2.jpg"
+                                                class="img-fluid" alt>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev custom-arrow"
+                                type="button"
+                                data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-control-next custom-arrow"
+                                type="button"
+                                data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="book">
-        <div class="container">
-            <div class="row row-box">
-                <div class="col-lg-6 col-md-6">
-                    <div class="detils">
-                        <h2>Book A Table</h2>
-                        <form action="table">
-                            <input type="text" name="user" id="user" placeholder="Your Name">
-                            <input type="text" name="num" id="num" placeholder="Your Phone" >
-                            <input type="email" name="email" id="email"placeholder="Your Emali" >
-                            <select name="" id="">
-                            <option value="How many person" selected disabled>How many person</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                            <input type="date" name="date" id="date">
-                            <button class="btn ">Book Now</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110412.26760715172!2d31.404011334029754!3d30.1404537796744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815538fd1342b%3A0xf0501f0302f12c54!2sBurger%20King%20-%20Merry%20Land%20Heliopolis!5e0!3m2!1sar!2seg!4v1749397981275!5m2!1sar!2seg"  class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimoinals">
-        <div class="container">
-            <div class="row row-testimoinals">
-
-                <div class="title">
-                    <h2>What Says Our Customers</h2>
-                </div>
-
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner h-100">
-
-                    <div class="carousel-item active  ">
-                        <div class="row row-item justify-content-center ">
-                        <div class="col-md-6 position-relative">
-                            <div class="customer ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h6>Moana Michell</h6>
-                            <p>magna aliqua</p>
-                                </div>
-                            <div class="picture  ">
-                            <img src="./imgs/client1.jpg" class="img-fluid" alt="">
-                                </div>
-                        </div>
-
-                        <div class="col-md-6 position-relative c2">
-                            <div class="customer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h6>Mike Hamell</h6>
-                            <p>magna aliqua</p>
-                                </div>
-                            <div class="picture  ">
-                            <img src="./imgs/client2.jpg" class="img-fluid" alt="">
-                                </div>
-                        </div>
-
+        <footer>
+            <div class="container">
+                <div
+                    class="row row-footer justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact">
+                            <h2>Contact Us</h2>
+                            <h6><i
+                                    class="fa-solid fa-location-dot"></i>Location</h6>
+                            <h6><i class="fa-solid fa-phone"></i>Call +201 144
+                                665 225</h6>
+                            <h6><i
+                                    class="fa-solid fa-envelope"></i>eida0556@gmail.com</h6>
                         </div>
                     </div>
-
-                    <div class="carousel-item  ">
-                        <div class="row row-item justify-content-center ">
-
-                        <div class="col-md-6 c2">
-                            <div class="customer  ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h6>Moana Michell</h6>
-                            <p>magna aliqua</p>
-                                </div>
-                            <div class="picture  ">
-                            <img src="./imgs/client1.jpg" class="img-fluid" alt="">
-                                </div>
-                        </div>
-                        
-                        <div class="col-md-6 ">
-                            <div class="customer  ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h6>Mike Hamell</h6>
-                            <p>magna aliqua</p>
-                                </div>
-                            <div class="picture  ">
-                            <img src="./imgs/client2.jpg" class="img-fluid" alt="">
-                                </div>
-                        </div>
-
+                    <div class="col-lg-4 col-md-4">
+                        <div class="social">
+                            <h2>Feane</h2>
+                            <p>Necessary, making this the first true generator
+                                on the Internet. It uses a dictionary of over
+                                200 Latin words, combined with</p>
+                            <div class="links">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-instagram-square"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="carousel-indicators">
-                        <button type="button" class="active carousel-control-prev-icon" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" aria-label="Slide 1">
-                            
-                        </button>
-                        <button type="button" class="carousel-control-next-icon" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2">
-                            
-                        </button>
-                    </div>
-                        
-                        </div>
-        </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row row-footer justify-content-center align-items-center">
-                <div class="col-lg-4 col-md-4">
-                    <div class="contact">
-                        <h2>Contact Us</h2>
-                        <h6><i class="fa-solid fa-location-dot"></i>Location</h6>
-                        <h6><i class="fa-solid fa-phone"></i>Call +201 144 665 225</h6>
-                        <h6><i class="fa-solid fa-envelope"></i>eida0556@gmail.com</h6>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="social">
-                        <h2>Feane</h2>
-                        <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
-                        <div class="links">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-instagram-square"></i>
-                            <i class="fa-brands fa-pinterest"></i>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="date">
+                            <h2>Opening Hours</h2>
+                            <h6>Everyday</h6>
+                            <h6>10.00 Am -10.00 Pm</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="date">
-                        <h2>Opening Hours</h2>
-                        <h6>Everyday</h6>
-                        <h6>10.00 Am -10.00 Pm</h6>
-                    </div>
+                <div class="copyright">
+                    <h6>© 2025 All Rights Reserved By Free Html Templates</h6>
+                    <h6>© Distributed By ThemeWagon</h6>
                 </div>
             </div>
-            <div class="copyright">
-                <h6>© 2025 All Rights Reserved By Free Html Templates</h6>
-                <h6>© Distributed By ThemeWagon</h6>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

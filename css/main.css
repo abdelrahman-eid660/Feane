@@ -77,7 +77,7 @@ body{
 }
 .navbar .user-option button.dark-mood{
     width: 60px;
-    text-align: start;
+    text-align: center;
     border: transparent;
     background-color: #1e232b;
     transition: all 1s;
@@ -86,14 +86,9 @@ body{
 .navbar .user-option button.dark-mood i{
     color: white;
     padding:8px 5px;
-    transition: all 0.5s;
 }
 .navbar .user-option button.dark-mood:hover{
-    text-align: end;
-    background-color: white;
-}
-.navbar .user-option button.dark-mood:hover i{
-    color: #1e232b;
+    background-color: #1f1f1f;
 }
 .navbar .user-option button{
     border-radius: 20px;
@@ -593,12 +588,30 @@ body{
     font-weight: 600;
     font-size: 18px
 }
-#testimoinals .carousel-indicators button {
+.custom-arrow {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    background: rgba(254, 176, 19, 0.4);
+    border: none;
+    color: white;
+    padding: 10px 5px;
     width: 40px;
-    height: 40px;
     border-radius: 50%;
-    margin: 70px 40px 0;
-    background-color: var(--color-primary1);
+    font-size: 20px;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+.carousel-control-prev.custom-arrow {
+    left: 380px;
+}
+
+.carousel-control-next.custom-arrow {
+    right: 350px;
+}
+.custom-arrow:hover {
+    background:#bc850e;
+    transform: translateY(-50%) scale(1.1);
 }
 /* medium screen  */
 @media (max-width:992px) {
@@ -613,12 +626,12 @@ body{
     font-weight: 600;
     font-size: 15px
 }
-#testimoinals .carousel-indicators button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 0px 30px 0;
-    background-color: var(--color-primary1);
+.carousel-control-prev.custom-arrow {
+    left: 250px;
+}
+
+.carousel-control-next.custom-arrow {
+    right: 220px;
 }
 }
 /* small screen  */
@@ -631,6 +644,9 @@ body{
     }
     #testimoinals #carouselExampleAutoplaying .c2{
         display: none;
+    }
+    .custom-arrow {
+    display: none;
     }
 }
 /* end testimoinals  */
@@ -671,7 +687,7 @@ footer .social i {
     margin: 0 5px;
     transition: all 0.3s;
     background: var(--color-white);
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
 }
 footer i:hover {
